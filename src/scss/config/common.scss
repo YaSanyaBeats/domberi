@@ -1,1 +1,31 @@
-// Заголовки, общие БЄМ блоки и проче...
+body {
+    font-family: 'TildaSans' ,sans-serif;
+    color: $black;
+    background-color: $bg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    margin: 0.67em 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $laptop;
+    padding: 0 15px;
+}
+
+.button {
+    background-color: $orange;
+    color: $white;
+    border-radius: 10px;
+    padding: 15px 40px;
+
+    text-decoration: none;
+
+    transition: .2s;
+    @include anyHover {
+        background-color: $orangeHover;
+    }
+}

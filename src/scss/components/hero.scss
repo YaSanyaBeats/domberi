@@ -1,0 +1,90 @@
+.hero {
+    background: url('../../images/hero.jpg') no-repeat center/cover;
+    padding: 100px 0;
+    position: relative;
+    &__container {}
+    &__title {
+        color: $white;
+        font-size: 48px;
+        text-align: center;
+        margin: 0;
+    }
+    &__text {
+        color: $white;
+        font-size: 18px;
+        margin-top: 20px;
+
+        text-align: center;
+    }
+    &__filters {
+        display: flex;
+        flex-direction: column;
+    }
+    &__form {
+        display: flex;
+        gap: 50px;
+        margin-top: 70px;
+    }
+    &__inputs {
+        flex-grow: 1;
+        background-color: $white;
+        border-radius: 10px;
+
+        display: flex;
+        align-items: center;
+    }
+    &__select {
+        flex-grow: 1;
+        @include notFirst() {
+            border-left: 1px solid #00000033;
+        }
+    }
+    &__submit {
+        flex: 0 0 300px;
+        font-size: 18px;
+    }
+    &__requests {
+        color: white;
+        font-size: 18px;
+
+        display: block;
+        margin-top: 20px;
+    }
+}
+.container {
+}
+.select {
+    padding: 25px 20px;
+    &__placeholder {
+        opacity: .6;
+        &_active {
+            opacity: 1;
+        }
+    }
+    &__tip {
+        display: none;
+        &_vertical {}
+    }
+    &__label {}
+    &__checkbox-hidden {}
+    &__checkbox {}
+    &__text {}
+    &__input-wrapper {}
+    &__input {}
+    &__input-label {}
+}
+.chevron {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        border: 7px solid transparent;
+        border-top: 7px solid black;
+    }
+}
+.button {
+}

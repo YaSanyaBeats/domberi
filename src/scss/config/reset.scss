@@ -3,7 +3,6 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  color: $fontColor;
 }
 
 *:before,
@@ -27,21 +26,6 @@ aside {
 
 html {
   scroll-behavior: smooth;
-
-  &.lock {
-    overflow: hidden;
-    touch-action: none;
-  }
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-  font-size: $fontSize + px;
-  font-family: $fontFamily;
-  font-weight: $fontWeight;
-  line-height: 1;
 }
 
 input,
@@ -68,18 +52,6 @@ button {
   }
 }
 
-a {
-  text-decoration: none;
-
-  &:visited {
-    text-decoration: none;
-  }
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 ul,
 li {
   list-style: none;
@@ -95,8 +67,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 sup {
